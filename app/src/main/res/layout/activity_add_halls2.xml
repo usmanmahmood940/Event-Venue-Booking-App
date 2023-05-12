@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Halls">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_bar">
+
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/txtImg"
+                style="@style/ItemTextView"
+                android:text="Images"/>
+            <TextView
+                android:id="@+id/info"
+                android:layout_below="@id/txtImg"
+                style="@style/ItemTextViewNormal"
+                android:layout_marginStart="2dp"
+                android:drawableLeft="@drawable/info_icon"
+                android:drawablePadding="5dp"
+                android:padding="3dp"
+                android:text="@string/info2" />
+
+            <Button
+                android:id="@+id/adding"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Add images"
+                android:onClick="addImages"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scrollbars="horizontal"/>
+
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/ItemTextView"
+                android:text="Hall information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:hint="Hall Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etHallName"
+                        style="@style/WorldTalent.EditText.Style2"
+                        android:inputType="textPersonName"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:hint="Address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etHallAddress"
+                        style="@style/WorldTalent.EditText.Style2"
+                        android:inputType="textPostalAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:hint="Phone Number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPhoneNumber"
+                        style="@style/WorldTalent.EditText.Style2"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:hint="Time Slots"
+                    app:boxBackgroundColor="@color/colorEditText"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <AutoCompleteTextView
+
+                        android:id="@+id/auto_complete_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.AppTheme.TextInputLayoutList"
+                        android:layout_width="1dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:hint="Time 1"
+                        android:id="@+id/eTime1Layout"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/eTime1"
+                            style="@style/WorldTalent.EditText.Style2"
+                            android:enabled="false"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.AppTheme.TextInputLayoutList"
+                        android:layout_width="1dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:hint="Time 2"
+                        android:id="@+id/eTime2Layout"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/eTime2"
+                            style="@style/WorldTalent.EditText.Style2"
+                            android:enabled="false"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:hint="Max no. of persons"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMaxPerson"
+                        style="@style/WorldTalent.EditText.Style2"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:hint="Advance payment percentage ">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAdvancePercentage"
+                        style="@style/WorldTalent.EditText.Style2"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:hint="Details of your hall">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDetail"
+                        style="@style/WorldTalent.EditText.Style2" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addMealLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvAddMeal"
+                style="@style/ItemTextView"
+                android:drawableEnd="@drawable/ic_baseline_add_24"
+
+                android:textSize="18sp"
+                android:text="Meals:"
+                android:onClick="addMeal"
+
+                />
+
+
+
+            <TextView
+                style="@style/ItemTextViewNormal"
+                android:layout_marginStart="2dp"
+                android:drawableLeft="@drawable/info_icon"
+                android:drawablePadding="5dp"
+                android:text="@string/info4"
+
+                />
+
+           <!-- <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/cbAllow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/info3"
+                    android:textAppearance="@style/checkbox_appearance"
+                    android:onClick="showPerhead"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:hint="Per head without food"
+                    android:visibility="gone"
+                    android:id="@+id/layoutbookWihoutFood"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPerHeadWithoutFood"
+                        style="@style/WorldTalent.EditText.Style2"
+                        android:inputType="number" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/etAddHall"
+                        style="@style/button_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_shape"
+                        android:onClick="addHall"
+                        android:text="Add Hall"
+                        android:textColor="@android:color/background_light"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

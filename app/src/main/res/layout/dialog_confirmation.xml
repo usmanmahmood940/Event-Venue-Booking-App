@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Confirmation"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp"
+                />
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:layout_weight="0.3"
+                            android:text="Hall Name" />
+
+                    <TextView
+
+                            android:id="@+id/tvHallName"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style" />
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:layout_weight="0.3"
+                            android:text="Start Time" />
+
+                    <TextView
+                            android:id="@+id/tvStartTime"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style" />
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:layout_weight="0.3"
+                            android:text="End Time" />
+
+                    <TextView
+                            android:id="@+id/tvEndTime"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style" />
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:layout_weight="0.3"
+                            android:text="Total Amount" />
+
+                    <TextView
+                            android:id="@+id/etTotalAmount"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style" />
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:layout_weight="0.4"
+                            android:text="Payment Method" />
+
+                    <RadioGroup
+                            android:id="@+id/rbGroup"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                        <RadioButton
+                                android:id="@+id/rbCash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:checked="true"
+                                android:text="Cash"
+                                android:textAppearance="@style/checkbox_appearance" />
+
+                       <!-- <RadioButton
+                                android:id="@+id/rbBank"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:text="Bank"
+                                android:textAppearance="@style/checkbox_appearance" />
+-->
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/line" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/elExpanded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_expanded="true"
+                app:el_duration="400">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/tvInfo"
+                            style="@style/ItemTextViewNormal"
+                            android:layout_marginStart="2dp"
+                            android:drawableLeft="@drawable/info_icon"
+                            android:drawablePadding="5dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/advance_message" />
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/line" />
+            </LinearLayout>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+        <RelativeLayout
+                android:id="@+id/btnBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/confirmBooking"
+                style="@style/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_primary"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Confirm Booking"
+                android:textColor="@color/color_text_white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+

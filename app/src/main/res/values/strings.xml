@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">E-Wedding Hall Booking</string>
+    <string name="vendor_details_msg">A user is a customer, while on other side vendor is a hall manager </string>
+    <string name="info2">You can add as much images you want</string>
+    <string name="info3">Allow users to book without food</string>
+    <string name="info4">These are the meals you provide. You can add max 3 meals and each meal have max 5 dishes.
+        Soft drinks are complementary </string>
+
+    <string name="email_error">Email is required</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="password_error">Password is required</string>
+    <string name="confirm_password_error">Please confirm password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="error_invalid_confirmPassword">Those passwords didn’t match</string>
+    <string name="phone_error">Phone Number is required</string>
+    <string name="error_invalid_phone">Phone number is not valid</string>
+    <string name="error_invalid_phone1">Phone number must be 8 to 11 digits long</string>
+    <string name="name_error">Name is required</string>
+    <string name="add_error">Address is required</string>
+
+    <string name="hallname_error">Hall name is required</string>
+    <string name="halladd_error">Hall address is required</string>
+
+
+    <string name="Gourmet_Details">We are providing Decoration,Generator Backup, Air condition, </string>
+
+    <string name="about_us">Keeping in consideration the increasing demand of marriage halls in pakistan and the hassle people face in booking a marriage hall by visiting the halls in person ,
+        the aim is to provide an online platform for booking marriage halls at your homes.
+        The major idea is to provide a mobile based application for wedding hall companies that would enable
+        the citizens to compare different factors of different halls then make bookings at the comfort of their
+        homes.</string>
+
+    <string name="advance_message">You will have to pay <b>{advance_payment}%</b> of your total amount. which is <b>{amount_to_pay}</b></string>
+
+    <string name="navigation_drawer_open">navigation drawer open </string>
+    <string name="navigation_drawer_close">close navigation drawer  </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Items">
+        <item>Gourment Marquee</item>
+        <item>Chalet Banquet Hall</item>
+
+
+    </string-array>
+    <string-array name="Account_Items">
+        <item>My Profile</item>
+        <item>Feedback</item>
+        <item>About Us</item>
+        <item>Logout</item>
+
+    </string-array>
+
+
+    <string-array name="Address">
+        <item>Lahore</item>
+        <item>Lahore</item>
+
+    </string-array>
+
+    <string-array name="meal_name">
+        <item>Chicken Menu</item>
+        <item>Beef Menu</item>
+        <item>Mutton Menu</item>
+    </string-array>
+
+    <string-array name="dish_suggestions">
+        <item>Chicken biryani</item>
+        <item>Chicken korma</item>
+        <item>Chicken kabab</item>
+        <item>Beef biryani</item>
+        <item>Beef kabab</item>
+        <item>Beef korma</item>
+        <item>Mutton korma</item>
+        <item>Mutton kabab</item>
+        <item>Mutton biryani</item>
+        <item>Russian Salad</item>
+        <item>Rasmalai</item>
+        <item>Gulab jamun</item>
+        <item>Green tea</item>
+        <item>Pink tea</item>
+        <item>Icecream</item>
+        <item>Kulfa</item>
+        <item>Firni</item>
+        <item>Petha Halwa</item>
+        <item>Gajar Halwa</item>
+    </string-array>
+
+    <string-array name="time_slots">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>

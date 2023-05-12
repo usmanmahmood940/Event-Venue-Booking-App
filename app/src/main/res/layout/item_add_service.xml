@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:id="@+id/mealLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                    android:id="@+id/etMealNo"
+                    style="@style/WorldTalent.EditText.Style2"
+                    android:layout_width="wrap_content"
+                    android:completionThreshold="1"
+                    android:hint="Meal Name."
+                    android:inputType="text"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivAddDish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/etMealNo"
+                android:src="@drawable/ic_baseline_add_24" />
+
+            <ImageView
+                android:id="@+id/ivCancel"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/cross_bold"
+                app:tint="@color/colorAccent" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/expandDishLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rvDishes"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+        </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutPerHead"
+                    style="@style/Widget.AppTheme.TextInputLayoutList"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:hint="Per Head Prize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        style="@style/WorldTalent.EditText.Style2"
+                        android:inputType="number"
+                        android:id="@+id/etPerHead"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</LinearLayout>

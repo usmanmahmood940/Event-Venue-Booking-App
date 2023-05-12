@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/main_page_toolbar"
+            layout="@layout/app_bar">
+
+        </include>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Edit Profile"
+                        android:textColor="@color/font"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Done"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgDp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/cicular_dp"
+                        android:padding="3dp"
+                        android:src="@drawable/wed" />
+
+                    <!-- <RelativeLayout
+                         android:id="@+id/ivCamera"
+                         android:layout_width="28dp"
+                         android:layout_height="28dp"
+                         android:layout_alignParentEnd="true"
+                         android:layout_alignParentRight="true"
+                         android:layout_alignParentBottom="true"
+                         android:background="@drawable/circular_camera"
+                         >
+
+                         <ImageView
+                             android:layout_width="28dp"
+                             android:layout_height="28dp"
+                             android:layout_centerInParent="true"
+                             android:layout_marginBottom="15dp"
+                             android:src="@drawable/photo"
+                             app:tint="@color/colorAccent" />
+                     </RelativeLayout>-->
+
+                </RelativeLayout>
+
+                <!--    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tvChangePassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="ChangePassword"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                android:text="Name" />
+
+                            <TextView
+                                android:id="@+id/Name"
+                                android:text="Maham Mahmood"
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                android:text="Email" />
+
+                            <TextView
+                                android:id="@+id/etEmail"
+                                android:text="maham@gmail.com"
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                android:text="Address" />
+
+                            <TextView
+                                android:id="@+id/etAddress"
+                                android:text="H#12, St#2, Lahore, Pakistan"
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                android:text="Phone No." />
+
+                            <TextView
+                                android:id="@+id/etPhoneNumber"
+                                android:text="03334789068"
+                                style="@style/WorldTalent.UpdateProfileTextView.Style"
+                                />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+                        <!--     <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+
+                                 <Button
+                                     android:id="@+id/edit_button"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:background="@drawable/button_shape"
+                                     android:text="Edit Details"
+                                     android:textAllCaps="false"
+                                     android:textColor="@android:color/background_light"
+                                     android:textSize="16sp"
+                                     android:layout_marginTop="5dp"
+                                     android:gravity="center"
+                                     />
+                             </LinearLayout>-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

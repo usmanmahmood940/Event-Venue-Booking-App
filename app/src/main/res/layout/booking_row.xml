@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:background="@color/simple_back2">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bookingDetailCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        android:clickable="true"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_my_bookings">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:id="@+id/bookingDetailLayout"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:text="Booking Date" />
+
+                        <TextView
+                            android:id="@+id/etDate"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style"
+                            android:text="Afternoon : 1:00 PM to 4:00 PM " />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:text="Booking Time" />
+
+                        <TextView
+                            android:id="@+id/etTime"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style"
+                            android:text="Afternoon : 1:00 PM to 4:00 PM " />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/WorldTalent.UpdateProfileTextView.Style"
+                        android:text="Hall Name" />
+
+                    <TextView
+                        android:id="@+id/etHallName"
+                        style="@style/WorldTalent.UpdateProfileEditText.Style"
+                        android:text="Gourment" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:text="No. of Persons" />
+
+                        <TextView
+                            android:id="@+id/etPerson"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style"
+                            android:text="100" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:text="Total Amount" />
+
+                        <TextView
+                            android:id="@+id/etAmount"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style"
+                            android:text="120000" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/WorldTalent.UpdateProfileTextView.Style"
+                            android:text="Status" />
+
+                        <TextView
+                            android:id="@+id/etStatus"
+                            style="@style/WorldTalent.UpdateProfileEditText.Style"
+                            android:text="Pending" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
